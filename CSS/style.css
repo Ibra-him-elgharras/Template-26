@@ -7,58 +7,62 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html,body{
-    background-color: aqua;
+body{
+    background: #f2f2f2;
     height: 100vh;
-    display: grid;
-    place-items: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     
 }
 
+
+
 nav{
-    width: 900px;
-    height: 80px;
-    background: red;
+    width: 600px;
+    height: 60px;
     border-radius: 5px;
-    box-shadow: 0px 2px 5px 2px #edededaf;
-    color: aliceblue;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    background: #ffffff;
     display: flex;
     align-items: center;
+    text-align: center;
     position: relative;
 }
 
-
-nav #bloc{
-    background: yellow;
-    height: 80px;
-    width: 180px;
-    margin: 0 3px;
-    border-radius: 5px;
-    position: absolute;
-    z-index: -500;
-    
-}
-
-
 nav label{
-    background: #fff;
-    height: 80px;
-    width: 180px;
-    margin: 0 3px;
+    height: 100%;
+    width: 100%;
+    margin: 0 5px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #663399cb;
-    font-size: 24px;
-    font-weight: 500;
+    color: #9d00ff;
+    font-size: 18px;
+    font-weight: 400;
     cursor: pointer;
     transition: all 0.4s ease;
+    z-index: 1;
     
 }
 
-nav label:hover{
+.slider{
     background: #9d00ff;
+    height: 100%;
+    width: 20%;
+    margin: 0 3px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+nav label:hover{
+    background: #9d00ff2a;
     color: #ffffff;
 }
 
@@ -66,6 +70,32 @@ nav label i{
     margin-right: 8px;
     
 }
+
+#home:checked ~ nav label.home,
+#blog:checked ~ nav label.blog,
+#code:checked ~ nav label.code,
+#help:checked ~ nav label.help,
+#about:checked ~ nav label.about{
+    color: #ffffff;
+}
+
+#blog:checked ~ nav .slider{
+    left: 20%;
+}
+
+#code:checked ~ nav .slider{
+    left: 40%;
+}
+
+#help:checked ~ nav .slider{
+    left: 60%;
+}
+
+#about:checked ~ nav .slider{
+    left: 80%;
+}
+
+
 
 
 
