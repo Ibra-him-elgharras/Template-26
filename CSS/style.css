@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Ubuntu+Condensed&family=Ubuntu+Mono&family=Ubuntu:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    background-color: aqua;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    
+}
+
+nav{
+    width: 900px;
+    height: 80px;
+    background: red;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 2px #edededaf;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+nav #bloc{
+    background: yellow;
+    height: 80px;
+    width: 180px;
+    margin: 0 3px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: -500;
+    
+}
+
+
+nav label{
+    background: #fff;
+    height: 80px;
+    width: 180px;
+    margin: 0 3px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #663399cb;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    
+}
+
+nav label:hover{
+    background: #9d00ff;
+    color: #ffffff;
+}
+
+nav label i{
+    margin-right: 8px;
+    
+}
+
+
+
+
