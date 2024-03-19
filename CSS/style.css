@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 body{
     background: #f2f2f2;
     height: 100vh;
@@ -14,11 +13,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
 }
-
-
 
 nav{
     width: 600px;
@@ -31,7 +26,6 @@ nav{
     text-align: center;
     position: relative;
 }
-
 nav label{
     height: 100%;
     width: 100%;
@@ -46,9 +40,7 @@ nav label{
     cursor: pointer;
     transition: all 0.4s ease;
     z-index: 1;
-    
 }
-
 .slider{
     background: #9d00ff;
     height: 100%;
@@ -60,17 +52,13 @@ nav label{
     left: 0;
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
 nav label:hover{
     background: #9d00ff2a;
     color: #ffffff;
 }
-
 nav label i{
     margin-right: 8px;
-    
 }
-
 #home:checked ~ nav label.home,
 #blog:checked ~ nav label.blog,
 #code:checked ~ nav label.code,
@@ -78,19 +66,15 @@ nav label i{
 #about:checked ~ nav label.about{
     color: #ffffff;
 }
-
 #blog:checked ~ nav .slider{
     left: 20%;
 }
-
 #code:checked ~ nav .slider{
     left: 40%;
 }
-
 #help:checked ~ nav .slider{
     left: 60%;
 }
-
 #about:checked ~ nav .slider{
     left: 80%;
 }
